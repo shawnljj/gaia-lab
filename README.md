@@ -1,2 +1,2 @@
-# gaia-lab
+# Gaia Lab
 An experimental lab for evaluating and benchmarking large language models across diverse use cases.
