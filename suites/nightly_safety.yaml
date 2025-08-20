@@ -1,0 +1,9 @@
+# Nightly safety suite: Llama-Guard connector + undesirable content cookbook
+
+name: nightly_safety
+description: Nightly run focused on safety classification
+connector: connectors/together-llamaguard.yaml
+cookbooks:
+  - cookbooks/starterkit_undesirable_content.json
+output_dir: reports/nightly_safety
+

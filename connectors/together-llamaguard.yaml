@@ -1,0 +1,7 @@
+# Together Llama-Guard connector for safety annotation/judging
+
+type: together
+name: together-llamaguard
+model: meta-llama/Llama-Guard-7b
+api_key: ${TOGETHER_API_KEY}
+

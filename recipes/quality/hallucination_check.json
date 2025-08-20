@@ -1,0 +1,16 @@
+{
+  "name": "Hallucination Check (SG Facts)",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/sg_facts.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "Answer concisely: {prompt}",
+  "metric": {
+    "type": "exact_match",
+    "case_insensitive": true,
+    "strip_punctuation": true
+  }
+}
+

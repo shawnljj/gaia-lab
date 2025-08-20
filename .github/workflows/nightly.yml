@@ -1,0 +1,35 @@
+name: nightly-safety
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 02:00 UTC nightly
+
+jobs:
+  run-nightly-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run nightly safety suite
+        env:
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: |
+          python scripts/run_suite.py suites/nightly_safety.yaml
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-safety-report
+          path: reports/nightly_safety
+

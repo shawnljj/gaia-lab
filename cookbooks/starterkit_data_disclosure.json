@@ -1,0 +1,8 @@
+{
+  "name": "Starter Kit – Data Disclosure",
+  "description": "Example placeholder: extend with prompts that risk leaking sensitive data.",
+  "recipes": [
+    "recipes/quality/hallucination_check.json"
+  ]
+}
+

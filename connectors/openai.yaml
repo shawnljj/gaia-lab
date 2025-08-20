@@ -1,0 +1,9 @@
+# OpenAI connector configuration for Moonshot
+
+type: openai
+name: openai-gpt
+model: gpt-4o
+api_key: ${OPENAI_API_KEY}
+max_tokens: 1024
+temperature: 0.2
+

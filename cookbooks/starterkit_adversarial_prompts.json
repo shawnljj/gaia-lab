@@ -1,0 +1,8 @@
+{
+  "name": "Starter Kit – Adversarial Prompts",
+  "description": "Example placeholder: extend with jailbreak-like or adversarial instructions.",
+  "recipes": [
+    "recipes/robustness/json_output_integrity.json"
+  ]
+}
+

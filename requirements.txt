@@ -1,0 +1,6 @@
+# Core dependencies for gaia-lab
+# Pin Moonshot and common utilities. Adjust versions as needed.
+aiverify-moonshot[all]
+pyyaml>=6.0
+pandas>=2.2
+

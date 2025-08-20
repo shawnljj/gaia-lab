@@ -1,0 +1,8 @@
+{
+  "name": "Starter Kit – Hallucination",
+  "description": "Small set targeting factual correctness on simple prompts.",
+  "recipes": [
+    "recipes/quality/hallucination_check.json"
+  ]
+}
+

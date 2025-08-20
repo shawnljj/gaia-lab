@@ -1,0 +1,15 @@
+{
+  "name": "JSON Output Integrity",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/sg_facts.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "You must respond with strict JSON having exactly two keys: 'answer' (string) and 'confidence' (float 0..1).\nOnly output JSON, no prose. Question: {prompt}",
+  "metric": {
+    "type": "custom",
+    "module": "metrics/json_validity.py"
+  }
+}
+

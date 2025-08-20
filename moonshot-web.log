@@ -1,0 +1,543 @@
+
+> moonshot-ui@0.7.3 start
+> next start
+
+[92m[2025-08-20 08:33:38,946] [INFO] [root]: Logging is configured.[0m
+[92m[2025-08-20 08:33:38,946] [INFO] [root]: Environment: DEV[0m
+[93m[2025-08-20 08:33:38,946] [WARNING] [moonshot.integrations.web_api.app]: CORS is disabled[0m
+  ▲ Next.js 14.2.31
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+[94m[2025-08-20 08:33:38,991] [DEBUG] [asyncio]: Using selector: EpollSelector[0m
+[92m[2025-08-20 08:33:39,001] [INFO] [uvicorn.error]: Started server process [671819][0m
+[92m[2025-08-20 08:33:39,001] [INFO] [uvicorn.error]: Waiting for application startup.[0m
+[92m[2025-08-20 08:33:39,001] [INFO] [uvicorn.error]: Application startup complete.[0m
+[92m[2025-08-20 08:33:39,001] [INFO] [uvicorn.error]: Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)[0m
+ ✓ Ready in 249ms
+BM EventBus limits:  15
+[92m[2025-08-20 08:41:19,028] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:19,029] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:19,030] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:19,031] [INFO] [uvicorn.access]: 127.0.0.1:49464 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:19,032] [INFO] [uvicorn.access]: 127.0.0.1:49474 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:19,052] [INFO] [uvicorn.access]: 127.0.0.1:49480 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:30,290] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:30,291] [INFO] [uvicorn.access]: 127.0.0.1:49684 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:30,293] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:30,293] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:30,296] [INFO] [uvicorn.access]: 127.0.0.1:49700 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:30,308] [INFO] [uvicorn.access]: 127.0.0.1:49706 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:32,866] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:32,879] [INFO] [uvicorn.access]: 127.0.0.1:49684 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:32,881] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:32,882] [INFO] [uvicorn.access]: 127.0.0.1:49700 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:32,886] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:32,887] [INFO] [uvicorn.access]: 127.0.0.1:49684 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:36,940] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:36,941] [INFO] [uvicorn.access]: 127.0.0.1:49684 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:36,942] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:36,943] [INFO] [uvicorn.access]: 127.0.0.1:49700 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:39,542] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:39,568] [INFO] [uvicorn.access]: 127.0.0.1:49684 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:51,148] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:51,148] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:51,273] [INFO] [uvicorn.access]: 127.0.0.1:49398 - "GET /api/v1/cookbooks?categories=IMDA+Starter+Kit&count=true HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:51,764] [INFO] [uvicorn.access]: 127.0.0.1:49396 - "GET /api/v1/cookbooks?count=true HTTP/1.1" 200[0m
+[92m[2025-08-20 08:41:55,417] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:41:55,428] [INFO] [uvicorn.access]: 127.0.0.1:49396 - "GET /api/v1/recipes?ids=mmlu%2Csingapore-facts-tf%2Csingapore-facts-mcq&count=true HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,012] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+2025-08-20 08:42:09,044 [INFO][runner.py::run_cookbooks(412)] [Runner] test-hallucination - Running benchmark cookbook run...
+[94m[2025-08-20 08:42:09,087] [DEBUG] [root]: {
+  "current_runner_id": "test-hallucination",
+  "current_runner_type": "benchmark",
+  "current_duration": 0,
+  "current_status": "running",
+  "current_cookbook_index": -1,
+  "current_cookbook_name": "",
+  "current_cookbook_total": -1,
+  "current_recipe_index": -1,
+  "current_recipe_name": "",
+  "current_recipe_total": -1,
+  "current_progress": 0,
+  "current_error_messages": []
+}[0m
+[94m[2025-08-20 08:42:09,089] [DEBUG] [urllib3.connectionpool]: Starting new HTTP connection (1): localhost:3000[0m
+Webhook callback invoked {
+  current_runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running'
+}
+[94m[2025-08-20 08:42:09,101] [DEBUG] [urllib3.connectionpool]: http://localhost:3000 "POST /api/v1/benchmarks/status HTTP/1.1" 200 None[0m
+[94m[2025-08-20 08:42:09,101] [DEBUG] [root]: {'msg': 'Updates sent to SSE writer'}[0m
+[92m[2025-08-20 08:42:09,101] [INFO] [root]: Progress data successfully sent to the server.[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+2025-08-20 08:42:09,110 [ERROR][connector.py::create(278)] [Connector] Failed to create connector: No module named 'together'
+2025-08-20 08:42:09,110 [ERROR][run_progress.py::notify_error(47)] [Benchmarking] Failed to generate benchmarking due to error: No module named 'together'
+[94m[2025-08-20 08:42:09,129] [DEBUG] [root]: {
+  "current_runner_id": "test-hallucination",
+  "current_runner_type": "benchmark",
+  "current_duration": 0,
+  "current_status": "running_with_errors",
+  "current_cookbook_index": -1,
+  "current_cookbook_name": "",
+  "current_cookbook_total": -1,
+  "current_recipe_index": -1,
+  "current_recipe_name": "",
+  "current_recipe_total": -1,
+  "current_progress": 0,
+  "current_error_messages": [
+    "[Benchmarking] Failed to generate benchmarking due to error: No module named 'together'"
+  ]
+}[0m
+[94m[2025-08-20 08:42:09,130] [DEBUG] [urllib3.connectionpool]: Starting new HTTP connection (1): localhost:3000[0m
+Webhook callback invoked {
+  current_runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+[94m[2025-08-20 08:42:09,138] [DEBUG] [urllib3.connectionpool]: http://localhost:3000 "POST /api/v1/benchmarks/status HTTP/1.1" 200 None[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+[94m[2025-08-20 08:42:09,138] [DEBUG] [root]: {'msg': 'Updates sent to SSE writer'}[0m
+[92m[2025-08-20 08:42:09,138] [INFO] [root]: Progress data successfully sent to the server.[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+[94m[2025-08-20 08:42:09,155] [DEBUG] [root]: {
+  "current_runner_id": "test-hallucination",
+  "current_runner_type": "benchmark",
+  "current_duration": 0,
+  "current_status": "completed_with_errors",
+  "current_cookbook_index": -1,
+  "current_cookbook_name": "",
+  "current_cookbook_total": -1,
+  "current_recipe_index": -1,
+  "current_recipe_name": "",
+  "current_recipe_total": -1,
+  "current_progress": 0,
+  "current_error_messages": [
+    "[Benchmarking] Failed to generate benchmarking due to error: No module named 'together'"
+  ]
+}[0m
+[94m[2025-08-20 08:42:09,156] [DEBUG] [urllib3.connectionpool]: Starting new HTTP connection (1): localhost:3000[0m
+Webhook callback invoked {
+  current_runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'completed_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'completed_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'completed_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'completed_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'completed_with_errors'
+}
+[94m[2025-08-20 08:42:09,163] [DEBUG] [urllib3.connectionpool]: http://localhost:3000 "POST /api/v1/benchmarks/status HTTP/1.1" 200 None[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+[94m[2025-08-20 08:42:09,163] [DEBUG] [root]: {'msg': 'Updates sent to SSE writer'}[0m
+[92m[2025-08-20 08:42:09,163] [INFO] [root]: Progress data successfully sent to the server.[0m
+2025-08-20 08:42:09,163 [INFO][benchmarking.py::generate(258)] [Benchmarking] Preparing results took 0.0001s
+2025-08-20 08:42:09,164 [INFO][benchmarking-result.py::generate(64)] [BenchmarkingResult] Generate results took 0.0000s
+2025-08-20 08:42:09,164 [ERROR][run_progress.py::notify_error(47)] [Run] Failed to run result processing module in Part 4 due to error: [BenchmarkingResult] Failed to generate results due to error: 'hallucination'
+[94m[2025-08-20 08:42:09,181] [DEBUG] [root]: {
+  "current_runner_id": "test-hallucination",
+  "current_runner_type": "benchmark",
+  "current_duration": 0,
+  "current_status": "running_with_errors",
+  "current_cookbook_index": -1,
+  "current_cookbook_name": "",
+  "current_cookbook_total": -1,
+  "current_recipe_index": -1,
+  "current_recipe_name": "",
+  "current_recipe_total": -1,
+  "current_progress": 0,
+  "current_error_messages": [
+    "[Benchmarking] Failed to generate benchmarking due to error: No module named 'together'",
+    "[Run] Failed to run result processing module in Part 4 due to error: [BenchmarkingResult] Failed to generate results due to error: 'hallucination'"
+  ]
+}[0m
+[94m[2025-08-20 08:42:09,182] [DEBUG] [urllib3.connectionpool]: Starting new HTTP connection (1): localhost:3000[0m
+Webhook callback invoked {
+  current_runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+Data received from webhook {
+  runner_id: 'test-hallucination',
+  current_progress: 0,
+  current_status: 'running_with_errors'
+}
+[94m[2025-08-20 08:42:09,188] [DEBUG] [urllib3.connectionpool]: http://localhost:3000 "POST /api/v1/benchmarks/status HTTP/1.1" 200 None[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+[94m[2025-08-20 08:42:09,189] [DEBUG] [root]: {'msg': 'Updates sent to SSE writer'}[0m
+ResponseAborted
+    at ServerResponse.<anonymous> (/home/lis7sgp/gaia-lab/moonshot-ui/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js:52:26)
+    at Object.onceWrapper (node:events:631:28)
+    at ServerResponse.emit (node:events:529:35)
+    at emitCloseNT (node:_http_server:1020:10)
+    at Socket.onServerResponseClose (node:_http_server:278:5)
+    at Socket.emit (node:events:529:35)
+    at TCP.<anonymous> (node:net:351:12)
+    at TCP.callbackTrampoline (node:internal/async_hooks:128:17)
+[92m[2025-08-20 08:42:09,189] [INFO] [root]: Progress data successfully sent to the server.[0m
+2025-08-20 08:42:09,189 [INFO][runner.py::run_cookbooks(438)] [Runner] test-hallucination - Benchmark cookbook run completed.
+[94m[2025-08-20 08:42:09,189] [DEBUG] [moonshot.integrations.web_api.services.base_service.BenchmarkTestManager]: Executor task_c6d5cf06-cef4-4c25-92f4-87737d5d0cfa has completed[0m
+[92m[2025-08-20 08:42:09,189] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "POST /api/v1/benchmarks?type=cookbook HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,204] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,204] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,221] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,222] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,224] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,227] [INFO] [uvicorn.access]: 127.0.0.1:40136 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,231] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,235] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,525] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,526] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,535] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,535] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,538] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/runners/test-hallucination HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,541] [INFO] [uvicorn.access]: 127.0.0.1:40136 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,558] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,560] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,590] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,597] [INFO] [uvicorn.access]: 127.0.0.1:40136 - "GET /api/v1/cookbooks?ids=hallucination HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:09,608] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:09,623] [INFO] [uvicorn.access]: 127.0.0.1:40126 - "GET /api/v1/recipes?ids=mmlu%2Csingapore-facts-tf%2Csingapore-facts-mcq&count=true HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:20,793] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:20,794] [INFO] [uvicorn.access]: 127.0.0.1:56166 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:20,796] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:20,797] [INFO] [uvicorn.access]: 127.0.0.1:56172 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:20,803] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:20,805] [INFO] [uvicorn.access]: 127.0.0.1:56166 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:22,042] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:22,063] [INFO] [uvicorn.access]: 127.0.0.1:56166 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:22,494] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:22,509] [INFO] [uvicorn.access]: 127.0.0.1:56166 - "GET /api/v1/llm-endpoints HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:22,510] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:22,510] [INFO] [uvicorn.access]: 127.0.0.1:56172 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:22,516] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:22,518] [INFO] [uvicorn.access]: 127.0.0.1:56176 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:22,521] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:22,523] [INFO] [uvicorn.access]: 127.0.0.1:56166 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:32,836] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:32,839] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/llm-endpoints/together-mixtral-8x22b HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:32,867] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:32,869] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/connectors HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:37,570] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:37,572] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:37,580] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:37,583] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:37,585] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:37,587] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:38,565] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:38,566] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:38,567] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:38,568] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:38,573] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:38,576] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:39,391] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:39,392] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:39,393] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:39,395] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:39,397] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:39,400] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:40,271] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:40,272] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:40,275] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:40,277] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:40,282] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:40,286] [INFO] [uvicorn.access]: 127.0.0.1:56838 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:41,229] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:41,230] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:41,233] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:41,236] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:41,238] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:41,242] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:42,005] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:42,010] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/sessions HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:42,012] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:42,013] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:42,016] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:42,018] [INFO] [uvicorn.access]: 127.0.0.1:56838 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:42,022] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:42,025] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:44,003] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:44,004] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:44,006] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:44,008] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:44,013] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:44,016] [INFO] [uvicorn.access]: 127.0.0.1:56838 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:45,833] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:45,835] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/benchmarks/status HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:45,836] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:45,838] [INFO] [uvicorn.access]: 127.0.0.1:56824 - "GET /api/v1/runners HTTP/1.1" 200[0m
+[92m[2025-08-20 08:42:45,843] [INFO] [moonshot.integrations.web_api.app]: Request origin: None[0m
+[92m[2025-08-20 08:42:45,847] [INFO] [uvicorn.access]: 127.0.0.1:56914 - "GET /api/v1/runners/test-hallucination/runs/1 HTTP/1.1" 200[0m

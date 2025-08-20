@@ -1,0 +1,11 @@
+# Weekly regression suite: OpenAI connector + multiple cookbooks
+
+name: weekly_regression
+description: Broader mix of quality, safety, and robustness checks
+connector: connectors/openai.yaml
+cookbooks:
+  - cookbooks/starterkit_hallucination.json
+  - cookbooks/starterkit_adversarial_prompts.json
+  - cookbooks/starterkit_undesirable_content.json
+output_dir: reports/weekly_regression
+

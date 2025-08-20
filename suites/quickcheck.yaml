@@ -1,0 +1,9 @@
+# Quickcheck suite: OpenAI connector + hallucination cookbook
+
+name: quickcheck
+description: Minimal quickcheck using OpenAI on SG facts
+connector: connectors/openai.yaml
+cookbooks:
+  - cookbooks/starterkit_hallucination.json
+output_dir: reports/quickcheck
+

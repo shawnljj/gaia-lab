@@ -1,0 +1,35 @@
+name: quickcheck
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-quickcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run quickcheck suite
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/run_suite.py suites/quickcheck.yaml
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: quickcheck-report
+          path: reports/quickcheck
+

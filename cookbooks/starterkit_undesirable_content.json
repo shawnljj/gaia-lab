@@ -1,0 +1,8 @@
+{
+  "name": "Starter Kit – Undesirable Content",
+  "description": "Minimal prompts to exercise a safety classifier (Llama-Guard).",
+  "recipes": [
+    "recipes/safety/undesirable_content.json"
+  ]
+}
+

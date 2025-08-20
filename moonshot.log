@@ -1,0 +1,331 @@
+[moonshot] Warning: Detected Python 3.12 via 'python3'. Proceeding (MOONSHOT_RELAX=1).
+[moonshot] Created .env from .env.example. Fill in API keys as needed.
+[moonshot] Upgrading pip/setuptools/wheel
+[moonshot] Installing requirements.txt
+Requirement already satisfied: pyyaml>=6.0 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (6.0.2)
+Requirement already satisfied: pandas>=2.2 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (2.3.1)
+Requirement already satisfied: aiverify-moonshot[all] in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.7.3)
+Requirement already satisfied: datasets~=3.2.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.2.0)
+Requirement already satisfied: ijson>=3.3.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.4.0)
+Requirement already satisfied: jinja2>=3.1.6 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.1.6)
+Requirement already satisfied: numpy~=1.26.4 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.26.4)
+Requirement already satisfied: pydantic==2.8.2 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.8.2)
+Requirement already satisfied: pyparsing>=3.2.3 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.2.3)
+Requirement already satisfied: python-dotenv>=1.1.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.1.1)
+Requirement already satisfied: python-multipart>=0.0.9 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.0.20)
+Requirement already satisfied: python-slugify>=8.0.4 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (8.0.4)
+Requirement already satisfied: tenacity~=8.5.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (8.5.0)
+Requirement already satisfied: xxhash>=3.5.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.5.0)
+Requirement already satisfied: cmd2>=2.4.3 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.7.0)
+Requirement already satisfied: dependency-injector>=4.41.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (4.48.1)
+Requirement already satisfied: fastapi>=0.115.4 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.116.1)
+Requirement already satisfied: rich>=13.8.0 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (14.1.0)
+Requirement already satisfied: typing-extensions==4.13.2 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (4.13.2)
+Requirement already satisfied: uvicorn>=0.30.6 in ./.venv/lib/python3.12/site-packages (from aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.35.0)
+Requirement already satisfied: annotated-types>=0.4.0 in ./.venv/lib/python3.12/site-packages (from pydantic==2.8.2->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.20.1 in ./.venv/lib/python3.12/site-packages (from pydantic==2.8.2->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.20.1)
+Requirement already satisfied: filelock in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.19.1)
+Requirement already satisfied: pyarrow>=15.0.0 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (21.0.0)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.3.8)
+Requirement already satisfied: requests>=2.32.2 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.32.5)
+Requirement already satisfied: tqdm>=4.66.3 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (4.67.1)
+Requirement already satisfied: multiprocess<0.70.17 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.70.16)
+Requirement already satisfied: fsspec<=2024.9.0,>=2023.1.0 in ./.venv/lib/python3.12/site-packages (from fsspec[http]<=2024.9.0,>=2023.1.0->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2024.9.0)
+Requirement already satisfied: aiohttp in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.12.15)
+Requirement already satisfied: huggingface-hub>=0.23.0 in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.34.4)
+Requirement already satisfied: packaging in ./.venv/lib/python3.12/site-packages (from datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (25.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./.venv/lib/python3.12/site-packages (from pandas>=2.2->-r requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./.venv/lib/python3.12/site-packages (from pandas>=2.2->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./.venv/lib/python3.12/site-packages (from pandas>=2.2->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (25.3.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.7.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (6.6.4)
+Requirement already satisfied: propcache>=0.2.0 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.3.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./.venv/lib/python3.12/site-packages (from aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.20.1)
+Requirement already satisfied: idna>=2.0 in ./.venv/lib/python3.12/site-packages (from yarl<2.0,>=1.17.0->aiohttp->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.10)
+Requirement already satisfied: pyperclip>=1.8 in ./.venv/lib/python3.12/site-packages (from cmd2>=2.4.3->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.9.0)
+Requirement already satisfied: rich-argparse>=1.7.1 in ./.venv/lib/python3.12/site-packages (from cmd2>=2.4.3->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.7.1)
+Requirement already satisfied: wcwidth>=0.2.10 in ./.venv/lib/python3.12/site-packages (from cmd2>=2.4.3->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.2.13)
+Requirement already satisfied: starlette<0.48.0,>=0.40.0 in ./.venv/lib/python3.12/site-packages (from fastapi>=0.115.4->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.47.2)
+Requirement already satisfied: anyio<5,>=3.6.2 in ./.venv/lib/python3.12/site-packages (from starlette<0.48.0,>=0.40.0->fastapi>=0.115.4->aiverify-moonshot[all]->-r requirements.txt (line 3)) (4.10.0)
+Requirement already satisfied: sniffio>=1.1 in ./.venv/lib/python3.12/site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi>=0.115.4->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.3.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in ./.venv/lib/python3.12/site-packages (from huggingface-hub>=0.23.0->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.1.8)
+Requirement already satisfied: MarkupSafe>=2.0 in ./.venv/lib/python3.12/site-packages (from jinja2>=3.1.6->aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.0.2)
+Requirement already satisfied: six>=1.5 in ./.venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas>=2.2->-r requirements.txt (line 5)) (1.17.0)
+Requirement already satisfied: text-unidecode>=1.3 in ./.venv/lib/python3.12/site-packages (from python-slugify>=8.0.4->aiverify-moonshot[all]->-r requirements.txt (line 3)) (1.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.12/site-packages (from requests>=2.32.2->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (3.4.3)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.12/site-packages (from requests>=2.32.2->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.12/site-packages (from requests>=2.32.2->datasets~=3.2.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2025.8.3)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.12/site-packages (from rich>=13.8.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./.venv/lib/python3.12/site-packages (from rich>=13.8.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.1.2)
+Requirement already satisfied: click>=7.0 in ./.venv/lib/python3.12/site-packages (from uvicorn>=0.30.6->aiverify-moonshot[all]->-r requirements.txt (line 3)) (8.2.1)
+Requirement already satisfied: h11>=0.8 in ./.venv/lib/python3.12/site-packages (from uvicorn>=0.30.6->aiverify-moonshot[all]->-r requirements.txt (line 3)) (0.16.0)
+[moonshot] Warning: Node.js 18.19.1 detected (< 20.11.1). Proceeding (MOONSHOT_RELAX=1).
+[moonshot] Installing Moonshot data and UI assets (idempotent)
+2025-08-20 08:30:33,316 [INFO][__main__.py::moonshot_data_installation(138)] Installing Moonshot Data from GitHub
+2025-08-20 08:30:33,316 [INFO][__main__.py::moonshot_data_installation(170)] Cloning https://github.com/aiverify-foundation/moonshot-data.git
+Cloning into 'moonshot-data'...
+Updating files:  47% (250/530)Updating files:  48% (255/530)Updating files:  49% (260/530)Updating files:  50% (265/530)Updating files:  51% (271/530)Updating files:  52% (276/530)Updating files:  53% (281/530)Updating files:  54% (287/530)Updating files:  55% (292/530)Updating files:  56% (297/530)Updating files:  57% (303/530)Updating files:  58% (308/530)Updating files:  59% (313/530)Updating files:  60% (318/530)Updating files:  61% (324/530)Updating files:  62% (329/530)Updating files:  63% (334/530)Updating files:  64% (340/530)Updating files:  65% (345/530)Updating files:  66% (350/530)Updating files:  67% (356/530)Updating files:  68% (361/530)Updating files:  69% (366/530)Updating files:  70% (371/530)Updating files:  71% (377/530)Updating files:  72% (382/530)Updating files:  73% (387/530)Updating files:  74% (393/530)Updating files:  75% (398/530)Updating files:  76% (403/530)Updating files:  77% (409/530)Updating files:  78% (414/530)Updating files:  79% (419/530)Updating files:  80% (424/530)Updating files:  81% (430/530)Updating files:  82% (435/530)Updating files:  83% (440/530)Updating files:  84% (446/530)Updating files:  85% (451/530)Updating files:  86% (456/530)Updating files:  87% (462/530)Updating files:  88% (467/530)Updating files:  89% (472/530)Updating files:  90% (477/530)Updating files:  91% (483/530)Updating files:  92% (488/530)Updating files:  93% (493/530)Updating files:  94% (499/530)Updating files:  95% (504/530)Updating files:  96% (509/530)Updating files:  97% (515/530)Updating files:  98% (520/530)Updating files:  99% (525/530)Updating files: 100% (530/530)Updating files: 100% (530/530), done.
+2025-08-20 08:30:44,056 [INFO][__main__.py::moonshot_data_installation(180)] Installing requirements for moonshot-data
+Ignoring absl-py: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring accelerate: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiofiles: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiohappyeyeballs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiohttp-retry: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiohttp: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiometer: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring aiosignal: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring annotated-types: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring anthropic: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring anyio: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring anytree: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring appdirs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring astunparse: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring attrs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring beautifulsoup4: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring bert-score: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring bioc: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring blis: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring boto3: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring botocore: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring bs4: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring cachetools: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring catalogue: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring certifi: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring charset-normalizer: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring click: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring cloudpathlib: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring colorama: markers 'python_version >= "3.11" and python_version < "3.12" and sys_platform == "win32" or python_version >= "3.11" and python_version < "3.12" and platform_system == "Windows"' don't match your environment
+Ignoring coloredlogs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring confection: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring conllu: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring contourpy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring cycler: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring cymem: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring dataclasses-json: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring datasets: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring deprecated: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring dill: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring distro: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring docopt: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring editdistance: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring eval-type-backport: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring filelock: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring filetype: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring flair: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring flatbuffers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring fonttools: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring frozenlist: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring fsspec: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring ftfy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring gast: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring gdown: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-ai-generativelanguage: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-api-core: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-api-python-client: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-auth-httplib2: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-auth: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-generativeai: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring google-pasta: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring googleapis-common-protos: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring greenlet: markers 'python_version >= "3.11" and python_version < "3.12" and (platform_machine == "aarch64" or platform_machine == "ppc64le" or platform_machine == "x86_64" or platform_machine == "amd64" or platform_machine == "AMD64" or platform_machine == "win32" or platform_machine == "WIN32")' don't match your environment
+Ignoring grpcio-status: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring grpcio: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring h11: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring h2o-authn: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring h2ogpte: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring h5py: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring homoglyphs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring httpcore: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring httplib2: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring httpx-sse: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring httpx: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring huggingface-hub: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring humanfriendly: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring idna: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring intervaltree: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jieba: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jinja2: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jiter: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jmespath: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring joblib: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jsonlines: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jsonpatch: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring jsonpointer: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring keras: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring kiwisolver: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langchain-community: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langchain-core: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langchain-openai: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langchain-text-splitters: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langchain: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langcodes: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langdetect: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring langsmith: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring language-data: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring language-tool-python: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring lemminflect: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring libclang: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring lightning-utilities: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring lru-dict: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring lxml: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring marisa-trie: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring markdown-it-py: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring markdown: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring markupsafe: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring marshmallow: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring matplotlib: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring mdurl: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring ml-dtypes: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring more-itertools: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring mpld3: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring mpmath: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring multidict: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring multiprocess: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring murmurhash: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring mypy-extensions: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring namex: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring nest-asyncio: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring networkx: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring nltk: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring nudenet: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring num2words: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring numpy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring nvidia-cublas-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cuda-cupti-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cuda-nvrtc-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cuda-runtime-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cudnn-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cufft-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cufile-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-curand-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cusolver-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cusparse-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-cusparselt-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-nccl-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine != "aarch64"' don't match your environment
+Ignoring nvidia-nvjitlink-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring nvidia-nvtx-cu12: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring onnxruntime: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring openai: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring opencv-python-headless: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring openhownet: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring opt-einsum: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring optree: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring orjson: markers 'python_version >= "3.11" and python_version < "3.12" and platform_python_implementation != "PyPy"' don't match your environment
+Ignoring packaging: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pandas: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pillow: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pinyin: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pptree: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring preshed: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring propcache: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring proto-plus: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring protobuf: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring psutil: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring py-readability-metrics: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyarrow: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyasn1-modules: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyasn1: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pybind11: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pydantic-core: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pydantic-settings: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pydantic: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pygments: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pylcs: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyparsing: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyreadline3: markers 'python_version >= "3.11" and python_version < "3.12" and sys_platform == "win32"' don't match your environment
+Ignoring pysbd: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pysocks: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring python-dateutil: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring python-dotenv: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pytorch-revgrad: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pytz: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring pyyaml: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring ragas: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring regex: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring requests-toolbelt: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring requests: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring rich: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring rouge-score: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring rouge: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring rsa: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring s3transfer: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring safetensors: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring scikit-learn: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring scipy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring segtok: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sentence-transformers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sentencepiece: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring setuptools: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring shellingham: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring six: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring smart-open: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sniffio: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sortedcontainers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring soupsieve: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring spacy-legacy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring spacy-loggers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring spacy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sqlalchemy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sqlitedict: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring srsly: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring sympy: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tabulate: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tenacity: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tensorboard-data-server: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tensorboard: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tensorflow-hub: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tensorflow-io-gcs-filesystem: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tensorflow: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring termcolor: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring terminaltables: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring textattack: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tf-keras: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring thinc: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring threadpoolctl: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tiktoken: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring together: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tokenizers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring toml: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring torch: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring torchmetrics: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring torchvision: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tqdm: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring transformer-smaller-training-vocab: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring transformers: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring triton: markers 'python_version >= "3.11" and python_version < "3.12" and platform_system == "Linux" and platform_machine == "x86_64"' don't match your environment
+Ignoring typer: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring typing-extensions: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring typing-inspect: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring typing-inspection: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring tzdata: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring uritemplate: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring urllib3: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring wasabi: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring wcwidth: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring weasel: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring websockets: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring werkzeug: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring wheel: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring wikipedia-api: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring word2number: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring wrapt: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring xgboost: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring xxhash: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Ignoring yarl: markers 'python_version >= "3.11" and python_version < "3.12"' don't match your environment
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/lis7sgp/gaia-lab/.venv/lib/python3.12/site-packages/moonshot/__main__.py", line 365, in <module>
+    main()
+  File "/home/lis7sgp/gaia-lab/.venv/lib/python3.12/site-packages/moonshot/__main__.py", line 323, in main
+    moonshot_data_installation(args.unattended, args.overwrite)
+  File "/home/lis7sgp/gaia-lab/.venv/lib/python3.12/site-packages/moonshot/__main__.py", line 184, in moonshot_data_installation
+    download_nltk_resources()
+  File "/home/lis7sgp/gaia-lab/.venv/lib/python3.12/site-packages/moonshot/__main__.py", line 96, in download_nltk_resources
+    import nltk
+ModuleNotFoundError: No module named 'nltk'
+[moonshot][error] Failed to install Moonshot assets. Ensure network access and Git are available.
