@@ -1,0 +1,8 @@
+# Enterprise Support Engineer Suite: Evaluates LLM performance as customer support chatbot
+
+name: enterprise_support_engineer
+description: Comprehensive evaluation of LLM capabilities as enterprise customer support engineer, testing response quality, professional tone, escalation decisions, and technical accuracy across 100 technical scenarios
+connector: connectors/openai.yaml
+cookbooks:
+  - cookbooks/enterprise_support_engineer.json
+output_dir: reports/enterprise_support_engineer

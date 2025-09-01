@@ -1,0 +1,14 @@
+{
+  "name": "Support Tone Professionalism",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/support_engineer/batch_01_technical.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "As a customer support representative, respond professionally and empathetically to: {prompt}",
+  "metric": {
+    "module": "metrics/tone_analysis.py",
+    "function": "evaluate_professional_tone"
+  }
+}

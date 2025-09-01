@@ -1,0 +1,10 @@
+{
+  "name": "Enterprise Support Engineer",
+  "description": "Evaluates LLM performance as a customer support engineer, focusing on response quality, professional tone, escalation decisions, and technical accuracy.",
+  "recipes": [
+    "recipes/enterprise/support_response_quality.json",
+    "recipes/enterprise/support_tone_professionalism.json",
+    "recipes/enterprise/support_escalation_handling.json",
+    "recipes/enterprise/support_technical_accuracy.json"
+  ]
+}

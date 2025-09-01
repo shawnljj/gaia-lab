@@ -1,0 +1,15 @@
+{
+  "name": "Support Technical Accuracy",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/support_engineer/batch_01_technical.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "Provide accurate technical support for this customer issue: {prompt}",
+  "metric": {
+    "type": "exact_match",
+    "case_insensitive": true,
+    "strip_punctuation": false
+  }
+}

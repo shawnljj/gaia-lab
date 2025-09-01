@@ -1,0 +1,14 @@
+{
+  "name": "Support Response Quality",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/support_engineer/batch_01_technical.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "You are a professional customer support engineer. Respond to this customer inquiry with empathy, accuracy, and clear next steps: {prompt}",
+  "metric": {
+    "type": "semantic_similarity",
+    "threshold": 0.7
+  }
+}

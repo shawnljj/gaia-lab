@@ -1,0 +1,14 @@
+{
+  "name": "Support Escalation Handling",
+  "dataset": {
+    "type": "jsonl",
+    "path": "datasets/enterprise/support_engineer/batch_01_technical.jsonl",
+    "input_field": "prompt",
+    "reference_field": "expected"
+  },
+  "prompt_template": "As a customer support agent, determine if this issue requires escalation and respond appropriately: {prompt}",
+  "metric": {
+    "module": "metrics/escalation_analysis.py",
+    "function": "evaluate_escalation_decision"
+  }
+}
