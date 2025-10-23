@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  moonshot:
+    build: .
+    container_name: moonshot-eval
+    ports:
+      - "3000:3000"  # Web UI
+      - "5000:5000"  # API
+    environment:
+      - NODE_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TOGETHER_API_KEY=${TOGETHER_API_KEY:-}
+    volumes:
+      # Persist reports outside container
+      - ./reports:/app/reports
+      # Optional: Mount custom datasets
+      - ./datasets:/app/datasets/custom:ro
+    restart: unless-stopped
+    networks:
+      - moonshot-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Nginx reverse proxy with SSL
+  nginx:
+    image: nginx:alpine
+    container_name: moonshot-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - moonshot
+    networks:
+      - moonshot-network
+    restart: unless-stopped
+    profiles:
+      - with-nginx
+
+networks:
+  moonshot-network:
+    driver: bridge
